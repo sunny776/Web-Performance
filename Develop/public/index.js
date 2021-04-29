@@ -122,6 +122,7 @@ function sendTransaction(isAdding) {
     }
   })
   .then(response => {    
+    populateChart();
     return response.json();
   })
   .then(data => {
